@@ -8,7 +8,8 @@ import { AnimationsModule } from '../shared/animations/animations.module';
   declarations: [HomeComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    AnimationsModule
   ]
 })
 export class HomeModule { }
