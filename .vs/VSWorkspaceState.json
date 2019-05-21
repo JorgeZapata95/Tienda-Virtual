@@ -4,9 +4,11 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\home",
+    "\\src\\app\\home\\item",
     "\\src\\app\\models",
-    "\\src\\app\\shared"
+    "\\src\\app\\shared",
+    "\\src\\app\\shared\\animations"
   ],
-  "SelectedNode": "\\src\\app\\shared\\shared.module.ts",
+  "SelectedNode": "\\src\\index.html",
   "PreviewInSolutionExplorer": false
 }

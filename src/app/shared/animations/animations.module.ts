@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 
@@ -11,12 +15,20 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     CommonModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatMenuModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatDividerModule
   ],
   exports: [
     MatButtonModule,
     MatCheckboxModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatMenuModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatDividerModule
 
   ]
 })
