@@ -4,11 +4,10 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\home",
-    "\\src\\app\\home\\item",
-    "\\src\\app\\models",
+    "\\src\\app\\home\\category",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\animations"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\src\\app\\home\\category\\category.component.css",
   "PreviewInSolutionExplorer": false
 }

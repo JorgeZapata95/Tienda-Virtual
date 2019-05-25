@@ -1,14 +1,32 @@
-<mat-sidenav-container>
-    <mat-sidenav role="navigation" mode="side">Start</mat-sidenav>
-    <mat-sidenav-content>
-    <a href="" aria-label="Home"><mat-icon>home</mat-icon></a>
-          <label style="color: #00a3e8">Tienda Virtual</label>
-
- </mat-sidenav-content>
-</mat-sidenav-container>
-<mat-toolbar background-color="black">
-  <span align="right">Lista de categorías</span>
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+  <span align="right"><p class="title">Tienda Virtual</p></span>
+  </mat-toolbar-row>
 </mat-toolbar>
+
+<mat-sidenav-container class="example-container autosize">
+
+    <mat-sidenav #drawer class="example-sidenav" role="navigation" mode="side" opened>
+      <mat-list dense>
+        <mat-list-item>
+           <a href="" aria-label="Home"><mat-icon>home</mat-icon></a>
+           </mat-list-item>
+         <mat-list-item>
+          <button aria-label="Toggle sidenav" mat-icon-button (click)="onToggle()">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content class="example-sidenav-content">
+      <section>
+       <app-category></app-category>
+      </section>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
 
 
 

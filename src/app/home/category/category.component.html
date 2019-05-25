@@ -1,0 +1,28 @@
+<mat-card class="mat-card-category">
+<mat-card-header>
+<mat-card-title>
+  <h3>Lista de categorias</h3>
+</mat-card-title>
+</mat-card-header>
+  <mat-card-content>
+    <table>
+      <mat-list>
+        <mat-list-item *ngFor="let category of categories">
+          <tr>
+            <td class="text-cell">id</td>
+            <td class="text-cell">category name</td>
+            <mat-card-actions>
+              <button mat-icon-button>
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button>
+                <mat-icon color="warn">delete</mat-icon>
+              </button>
+            </mat-card-actions>
+          </tr>
+        <mat-divider></mat-divider>
+        </mat-list-item>
+      </mat-list>
+    </table>
+  </mat-card-content>
+</mat-card>
