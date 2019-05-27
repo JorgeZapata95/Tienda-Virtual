@@ -9,8 +9,8 @@
       <mat-list>
         <mat-list-item *ngFor="let category of categories">
           <tr>
-            <td class="text-cell">id</td>
-            <td class="text-cell">category name</td>
+            <td class="text-cell">{{category.id}}</td>
+            <td class="text-cell">{{category.name}}</td>
             <mat-card-actions>
               <button mat-icon-button>
                 <mat-icon>edit</mat-icon>
@@ -25,4 +25,6 @@
       </mat-list>
     </table>
   </mat-card-content>
+  <button mat-raised-button color="primary" (click)='onClick()'>Nuevo</button>
 </mat-card>
+

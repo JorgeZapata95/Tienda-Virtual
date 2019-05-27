@@ -1,9 +1,8 @@
 <mat-toolbar class="toolbar">
   <mat-toolbar-row>
-  <span align="right"><p class="title">Tienda Virtual</p></span>
+  <span><p class="title">Tienda Virtual</p></span>
   </mat-toolbar-row>
 </mat-toolbar>
-
 <mat-sidenav-container class="example-container autosize">
 
     <mat-sidenav #drawer class="example-sidenav" role="navigation" mode="side" opened>
@@ -22,7 +21,7 @@
 
     <mat-sidenav-content class="example-sidenav-content">
       <section>
-       <app-category></app-category>
+          <router-outlet></router-outlet>
       </section>
     </mat-sidenav-content>
 
