@@ -1,31 +1,31 @@
 <mat-toolbar class="toolbar">
   <mat-toolbar-row>
-  <span><p class="title">Tienda Virtual</p></span>
+    <button aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <span>
+      <p class="title">Tienda Virtual</p>
+    </span>
   </mat-toolbar-row>
 </mat-toolbar>
+
 <mat-sidenav-container class="example-container autosize">
+  <mat-sidenav #sidenav class="example-sidenav" role="navigation" mode="side" [(opened)]="opened">
+    <mat-list dense>
+      <mat-list-item>
+        <a href="" aria-label="Home">
+          <mat-icon class="app-icon">home</mat-icon>
+          <span class="list-text">Inicio</span>
+        </a>
+      </mat-list-item>
+    </mat-list>
 
-    <mat-sidenav #drawer class="example-sidenav" role="navigation" mode="side" opened>
-      <mat-list dense>
-        <mat-list-item>
-           <a href="" aria-label="Home"><mat-icon>home</mat-icon></a>
-           </mat-list-item>
-         <mat-list-item>
-          <button aria-label="Toggle sidenav" mat-icon-button (click)="onToggle()">
-            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-          </button>
-        </mat-list-item>
-      </mat-list>
+  </mat-sidenav>
 
-    </mat-sidenav>
-
-    <mat-sidenav-content class="example-sidenav-content">
-      <section>
-          <router-outlet></router-outlet>
-      </section>
-    </mat-sidenav-content>
+  <mat-sidenav-content class="example-sidenav-content">
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </mat-sidenav-content>
 
 </mat-sidenav-container>
-
-
-

@@ -1,25 +1,25 @@
 .example-container {
   position: absolute;
-  top: 65px;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: gray;
+  
 }
-
 .example-sidenav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.mat-drawer {
-  background-color: lightgray;
-}
-
 .example-sidenav-content {
   height: 100%;
   background-color: #fff;
+}
+
+.app-icon {
+  width: 50px;
+}
+
+.list-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .title {
@@ -28,5 +28,6 @@
 }
 
 .toolbar {
-  background-color: lightgray; 
+  background-color: lightgray;
+  left: 0; 
 }

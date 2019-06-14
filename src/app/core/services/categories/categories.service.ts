@@ -3,14 +3,13 @@ import { Category } from 'src/app/models/category';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
-import { Config} from '../../core/config/config';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriesService {
-  SERVICE_URL = 'localhost:3000/api/categories';
+  SERVICE_URL = 'https://store-backbone.herokuapp.com/api/categories';
   constructor(
     private http: HttpClient
     ) { }
@@ -20,6 +19,8 @@ export class CategoriesService {
     return this.http.get<Category[]>(this.SERVICE_URL)
     .pipe(retry(3), catchError(this.handleError) );
   }
+
+
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {

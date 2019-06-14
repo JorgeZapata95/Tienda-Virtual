@@ -1,5 +1,5 @@
-<form action="">
-  <label for="name">Nombre de categoria</label>
-  <input type="text" name="name">
+<form [formGroup]="categoryForm" (submit)="onSubmit(categoryForm.value)">
+  <label>Nombre de categoria</label>
+  <input type="text" formControlName="name">
   <button mat-stroked-button color="primary" type="submit">Guardar</button>
 </form>
