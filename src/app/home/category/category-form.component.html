@@ -1,5 +1,9 @@
-<form [formGroup]="categoryForm" (submit)="onSubmit(categoryForm.value)">
-  <label>Nombre de categoria</label>
-  <input type="text" formControlName="name">
+<section class="standard-form">
+<form class="form-full-width" [formGroup]="categoryForm" (submit)="onSubmit(categoryForm.value)">
+  <mat-form-field class="input-full-width" appearance="standard">
+    <mat-label>Nombre de categoría</mat-label>
+    <input matInput type="text" formControlName="name" autocomplete="off">
+  </mat-form-field>
   <button mat-stroked-button color="primary" type="submit">Guardar</button>
 </form>
+</section>
