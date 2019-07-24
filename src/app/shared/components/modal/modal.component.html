@@ -1,0 +1,7 @@
+<h1 mat-dialog-title>Borrar categoría</h1>
+<div mat-dialog-content>
+  <p>¿Seguro que quieres borrar la categoría: {{data.name}}?</p>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No gracias</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Si</button>
+</div> 

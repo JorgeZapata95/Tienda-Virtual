@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatButtonModule, MatCheckboxModule, MatSortModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatSortModule, MatDialogModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
@@ -31,7 +31,9 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     MatPaginatorModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatDialogModule,
+
   ],
   exports: [
     MatButtonModule,
@@ -47,7 +49,9 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     MatPaginatorModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatDialogModule,
+
   ]
 })
 export class AnimationsModule { }

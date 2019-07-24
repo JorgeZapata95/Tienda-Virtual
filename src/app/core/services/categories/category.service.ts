@@ -17,7 +17,7 @@ export class CategoryService {
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
-    })
+    }),
   };
 
   addCategory(category: Category): Observable<Category> {
@@ -25,6 +25,14 @@ export class CategoryService {
       .pipe(
         retry(3),
         catchError(this.handleError<Category>('Adding category'))
+      );
+  }
+
+  deleteCategory(category: string): Observable<Category> {
+    const url = `${this.SERVICE_URL}`;
+    return this.http.delete<Category>(url, this.httpOptions)
+      .pipe(
+        catchError(this.handleError<Category>('Deleting category'))
       );
   }
 
